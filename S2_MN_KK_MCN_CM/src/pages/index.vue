@@ -2,7 +2,7 @@
   <header>
     <img src="/img/homepage_mobile.webp" alt="image présentation foxtreme" class="lg:hidden w-full">
     <img src="/img/homepage_desktop.webp" alt="image homepage 2" class="hidden lg:block w-full h-[600px]">
-    <h1 class="h2 font-bold mb-4 mx-4">Donnez le meilleur de vous même avec Foxtreme.</h1>
+    <h1 class=" h2 font-bold mb-4 mx-4">Donnez le meilleur de vous même avec Foxtreme.</h1>
 
     <p class="h3 mx-4">La ville et sa pollution vous rendent anxieux, fatigués et déprimés ? </p>
     <p class="h3 mb-11 lg:mb-28 mx-4"> Vous aimez les défis seul ou en équipe et surpassez vos limite ?</p>
