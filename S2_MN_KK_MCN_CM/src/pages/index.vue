@@ -34,7 +34,7 @@ const lieuxfav: LieuxResponse[] = await lieuxfavoris();
   </div>
   <div class="flex justify-center items-center mb-7 ">
      <button
-       class="lg:mb-16 rounded-lg border-2 border-text px-5 py-2 font-semibold text-text hover:bg-text hover:text-backgroundcolor">
+       class="lg:mb-16 bg-toniccolor rounded-lg border-2 border-toniccolor px-5 py-2 font-semibold text-text hover:bg-text hover:text-backgroundcolor hover:border-text">
        <RouterLink to="/connexion">s'inscrire</RouterLink>
      </button>
     </div>
@@ -76,8 +76,8 @@ const lieuxfav: LieuxResponse[] = await lieuxfavoris();
 <section>
   <h1 class="h3 font-semibold text-center mt-7 mb-2">Partez à l’aventure dans toute la France dès maintenant</h1>
   <h2 class="h4 text-center">Nos coups de coeur du moment</h2>
-      <div class="  pt-6 flex overflow-hidden overflow-x-scroll gap-5  ">
-          <LieuxCard v-for=" unlieux of lieuxfav" :v-key="lieuxfavoris" v-bind="{ ...unlieux }"  class="flex-none" />
+      <div class="lg:grille pt-6 flex overflow-hidden overflow-x-scroll gap-5  ">
+          <LieuxCard v-for=" unlieux of lieuxfav" :v-key="lieuxfavoris" v-bind="{ ...unlieux }"  class="flex-none lg:col-span-4 " />
       </div>
 </section>
 
