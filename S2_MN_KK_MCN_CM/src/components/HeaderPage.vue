@@ -14,7 +14,7 @@ function closeMenu() {
 
 <template>
     <header
-        class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-backgroundcolor px-6 py-2 transition-all duration-300 ease-in-out lg:py-0">
+        class="relative z-5 flex w-full translate-y-0 items-stretch justify-between bg-backgroundcolor px-6 py-2 transition-all duration-300 ease-in-out lg:py-0">
         <div class="flex items-center">
             <a href="/">
                 <LogoIcon />
