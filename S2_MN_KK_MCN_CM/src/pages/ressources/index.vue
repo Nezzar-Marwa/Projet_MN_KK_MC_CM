@@ -10,7 +10,7 @@ const lesarticles: ArticlesResponse[] = await Allartcles();
         <h1 class="h1 font-semibold uppercase text-center mb-6">Ressources</h1>
         <p class="h3 text-center">Grace a Foksers, formez vous a la randonée </p>
     </div>
-    <div class="grille">
+    <div class="justify-center px-24 items-center grille">
         <ArticleCard v-for="unarticle of lesarticles" :v-key="Allartcles" v-bind="{ ...unarticle }" />
     </div>
 

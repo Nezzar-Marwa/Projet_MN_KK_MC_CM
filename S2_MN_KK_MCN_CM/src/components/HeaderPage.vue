@@ -32,7 +32,7 @@ function closeMenu() {
                     :class="{ '-translate-y-[9px] -rotate-45 bg-backgroundcolor': activeMenu }"></div>
             </button>
 
-            <nav class="invisible opacity-0 fixed inset-0 h-screen w-screen bg-contrastcolor text-2xl text-backgroundcolor transition-all duration-300 ease-in-out lg:visible lg:relative lg:pt-4 lg:flex lg:h-auto lg:w-auto lg:items-center lg:bg-transparent lg:text-sm lg:font-semibold lg:uppercase lg:tracking-wide lg:text-text lg:bg-backgroundcolor lg:opacity-100"
+            <nav class=" h3 invisible opacity-0 fixed inset-0 h-screen w-screen bg-contrastcolor text-backgroundcolor transition-all duration-300 ease-in-out lg:visible lg:relative lg:pt-4 lg:flex lg:h-auto lg:w-auto lg:items-center lg:bg-transparent lg:text-sm lg:font-semibold lg:uppercase lg:tracking-wide lg:text-text lg:bg-backgroundcolor lg:opacity-100"
                 :class="{ '!visible opacity-100': activeMenu }" v-scroll-lock="activeMenu">
                 <ul class="mt-[25vh] ml-16 lg:m-0 lg:flex">
                     <li class="menu-item">
