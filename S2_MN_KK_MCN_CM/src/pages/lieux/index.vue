@@ -10,7 +10,7 @@ const leslieux: LieuxResponse[] = await AllLieux();
         <h1 class="h1 font-semibold uppercase text-center mb-6">Les lieux pour commencer une aventure</h1>
         <p class="h3 text-center">Grace a Foxtreme découvrez de nouveaux horizons  </p>
     </div>
-    <div class="justify-center px-24 items-center grille">
+    <div class="justify-center  lg:px-24 items-center grille">
         <LieuxCard v-for=" unlieux of leslieux" :v-key="AllLieux" v-bind="{ ...unlieux }" />
     </div>
 
