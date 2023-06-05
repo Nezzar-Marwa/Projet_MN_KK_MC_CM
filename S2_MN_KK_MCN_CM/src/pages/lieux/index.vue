@@ -11,7 +11,7 @@ const leslieux: LieuxResponse[] = await AllLieux();
         <p class="h3 text-center">Grace a Foksers, formez vous a la randonée </p>
     </div>
     <div class="justify-center px-24 items-center grille">
-        <AllLieux v-for="unarticle of leslieux" :v-key="AllLieux" v-bind="{ ...unarticle }" />
+        <LieuxCard v-for=" unlieux of leslieux" :v-key="AllLieux" v-bind="{ ...unlieux }" />
     </div>
 
     <div class="mb-14">

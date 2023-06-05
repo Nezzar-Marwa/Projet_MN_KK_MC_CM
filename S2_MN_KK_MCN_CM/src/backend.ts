@@ -25,7 +25,7 @@ export async function OneId(id: string) {
 }
 
 export async function OneId2(id: string) {
-    const onerecord2 = await pb.collection('lieux').getOne<ArticlesResponse>(
+    const onerecord2 = await pb.collection('lieux').getOne<LieuxResponse>(
         id,
     );
     return onerecord2;
@@ -41,7 +41,7 @@ export async function OneId2(id: string) {
 
 
 export async function lieuxfavoris() {
-    const favorislieux = await pb.collection('lieux').getFullList<ArticlesResponse>({
+    const favorislieux = await pb.collection('lieux').getFullList<LieuxResponse>({
         filter: `favoris = True`,
 
     });
