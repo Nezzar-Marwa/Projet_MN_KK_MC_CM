@@ -1,11 +1,17 @@
 import PocketBase from 'pocketbase';
 import type { ArticlesResponse } from './pocketbase-types';
+import type { LieuxResponse } from './pocketbase-types';
 export const pb = new PocketBase('http://127.0.0.1:8090/');
 
 /*une fonction qui retourne la liste de tous les artistes (page)*/
 export async function Allartcles() {
     const articles = await pb.collection('articles').getFullList<ArticlesResponse>();
     return articles;
+}
+
+export async function AllLieux() {
+    const lieux = await pb.collection('lieux').getFullList<LieuxResponse>();
+    return lieux;
 }
 
 
@@ -18,10 +24,26 @@ export async function OneId(id: string) {
     return onerecord;
 }
 
-// export async function artistesfavoris() {
-//     const favorisarticle = await pb.collection('articles').getFullList<ArticlesResponse>({
-//         filter: `favoris = True`,
+export async function OneId2(id: string) {
+    const onerecord2 = await pb.collection('lieux').getOne<ArticlesResponse>(
+        id,
+    );
+    return onerecord2;
+}
 
-//     });
-//     return favorisarticle;
-// }
+ export async function articlesfavoris() {
+     const favorisarticle = await pb.collection('articles').getFullList<ArticlesResponse>({
+         filter: `favoris = True`,
+
+     });
+     return favorisarticle;
+ }
+
+
+export async function lieuxfavoris() {
+    const favorislieux = await pb.collection('lieux').getFullList<ArticlesResponse>({
+        filter: `favoris = True`,
+
+    });
+    return favorislieux;
+}
