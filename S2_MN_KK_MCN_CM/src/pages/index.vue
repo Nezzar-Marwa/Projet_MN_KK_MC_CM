@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import LieuxCard from '@/components/LieuxCard.vue';
+import { lieuxfavoris } from '@/backend';
+import type { LieuxResponse } from '@/pocketbase-types';
+const lieuxfav: LieuxResponse[] = await lieuxfavoris();
+</script>
 <template>
   <header>
     <img src="/img/homepage_mobile.webp" alt="image présentation foxtreme" class="lg:hidden w-full">
@@ -41,8 +47,8 @@
     <RouterLink to="/ressources" class=" bg-contrastcolor rounded-3xl flex lg:mx-[450px] mb-9">
       <img src="/img/hp_3.webp" alt="card 1" class="w-[130px] lg:w-[140px]">
       <div class="">
-      <h1 class="h5 text-backgroundcolor font-medium pt-4 lg:pt-7 mb-4 lg:mb-4 mx-8">Envie de découvrir le monde de la survie ?</h1>
-      <p class=" lg:hidden h4 text-backgroundcolor lg:mx-8 mx-2">Accedez a nos articles qui vous donnerons les bases pour bien débuter vos aventures.</p>
+      <h1 class="h5 text-backgroundcolor font-medium pt-4 lg:pt-7 mb-4 lg:mb-4 mx-3 lg:mx-8">Envie de découvrir le monde de la survie ?</h1>
+      <p class=" lg:hidden h4 text-backgroundcolor lg:mx-8 mx-2 pb-7">Accedez a nos articles qui vous donnerons les bases pour bien débuter vos aventures.</p>
       <p class="hidden lg:block h4 text-backgroundcolor lg:mx-8 lg:pb-8">Accedez a nos articles qui vous donnerons les bases pour bien débuter vos aventures et qui vous permetteront de rester informer sur les nouveauté dans le monde de la survie.</p>
       </div>
     </RouterLink>
@@ -51,8 +57,8 @@
         <RouterLink to="/communaute" class=" bg-contrastcolor rounded-3xl flex lg:mx-[450px] mb-9">
         <img src="/img/hp_4.webp" alt="card 1" class="w-[130px] lg:w-[140px]">
         <div>
-        <h1 class="h5 text-backgroundcolor font-medium pt-4 lg:pt-7 mb-4 lg:mb-4 mx-8">Besoin d’un conseil ?</h1>
-        <p class="lg:hidden h4 text-backgroundcolor lg:mx-8 mx-2">Demandez à la communauté de foxtrème qui saura vous aiguiller et vous  soutenir dans vos projets.</p>
+        <h1 class="h5 text-backgroundcolor font-medium pt-4 lg:pt-7 mb-4 lg:mb-4 mx-3 lg:mx-8">Besoin d’un conseil ?</h1>
+        <p class="lg:hidden h4 text-backgroundcolor lg:mx-8 mx-2 pb-7">Demandez à la communauté de foxtrème qui saura vous aiguiller et vous  soutenir dans vos projets.</p>
         <p class="hidden lg:block h4 text-backgroundcolor lg:mx-8 lg:pb-8">Demandez à la communauté de foxtrème qui saura vous aiguiller et vous  soutenir dans vos projets. Vous pourrez échanger et partager de bons souvenirs.</p>
         </div>
       </RouterLink>
@@ -60,8 +66,8 @@
         <RouterLink to="/lieux" class=" bg-contrastcolor rounded-3xl flex lg:mx-[450px]">
           <img src="/img/hp_5.webp" alt="card 1" class="w-[130px] lg:w-[140px]">
           <div>
-          <h1 class="h5 text-backgroundcolor font-medium pt-4 lg:pt-7 mb-4 lg:mb-4 mx-8">Envie de changement</h1>
-          <p class="lg:hidden h4 text-backgroundcolor lg:mx-8 mx-2">Vous voulez découvrir de nouveaux lieux? N’attendez plus Foxtrème vous permet d’accéder à des lieux merveilleux.</p>
+          <h1 class="h5 text-backgroundcolor font-medium pt-4 lg:pt-7 mb-4 lg:mb-4 mx-3 lg:mx-8">Envie de changement</h1>
+          <p class="lg:hidden h4 text-backgroundcolor lg:mx-8 mx-2 pb-7">Vous voulez découvrir de nouveaux lieux? N’attendez plus Foxtrème vous permet d’accéder à des lieux merveilleux.</p>
           <p class="hidden lg:block h4 text-backgroundcolor lg:mx-8 lg:pb-8">Vous voulez découvrir de nouveaux lieux mais ne savez pas par où commencer ? N’attendez plus Foxtrème vous permet d’accéder à des lieux merveilleux dans toute la France et proche de chez vous.</p>
           </div>
         </RouterLink>
@@ -70,6 +76,9 @@
 <section>
   <h1 class="h3 font-semibold text-center mt-7 mb-2">Partez à l’aventure dans toute la France dès maintenant</h1>
   <h2 class="h4 text-center">Nos coups de coeur du moment</h2>
+      <div class="  pt-6 flex overflow-hidden overflow-x-scroll gap-5  ">
+          <LieuxCard v-for=" unlieux of lieuxfav" :v-key="lieuxfavoris" v-bind="{ ...unlieux }"  class="flex-none" />
+      </div>
 </section>
 
   </header>
