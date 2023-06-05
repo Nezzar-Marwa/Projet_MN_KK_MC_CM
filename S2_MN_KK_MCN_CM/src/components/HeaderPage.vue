@@ -45,6 +45,9 @@ function closeMenu() {
                         <RouterLink class="menu-link" to="/cartes" @click="closeMenu">CARTES INTERACTIVES</RouterLink>
                     </li>
                     <li class="menu-item">
+                        <RouterLink class="menu-link" to="/lieux" @click="closeMenu">LIEUX</RouterLink>
+                    </li>
+                    <li class="menu-item">
                         <RouterLink class="menu-link" to="/a_propos" @click="closeMenu">A PROPOS</RouterLink>
                     </li>
                     <li class="menu-item">
