@@ -54,8 +54,8 @@ function closeMenu() {
                         <RouterLink class="menu-link" to="/contact" @click="closeMenu">CONTACT</RouterLink>
                     </li>
                     <li class="menu-item">
-                        <RouterLink class="menu-link lg:mt-none" to="/" @click="closeMenu"><button
-                                class="rounded-full border border-toniccolor px-10 py-3 font-poppins font-medium text-backgroundcolor bg-toniccolor">S'INSCRIRE</button>
+                        <RouterLink class="menu-link lg:mt-none" to="/connexion" @click="closeMenu"><button
+                                class="rounded-full border border-toniccolor px-10 py-3 font-poppins font-medium text-backgroundcolor bg-toniccolor" >S'INSCRIRE</button>
                         </RouterLink>
                     </li>
                 </ul>
