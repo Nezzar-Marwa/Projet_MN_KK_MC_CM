@@ -42,10 +42,10 @@ function closeMenu() {
                         <RouterLink class="menu-link" to="/communaute" @click="closeMenu">COMMUNAUTE</RouterLink>
                     </li>
                     <li class="menu-item">
-                        <RouterLink class="menu-link" to="/cartes" @click="closeMenu">CARTES INTERACTIVES</RouterLink>
+                        <RouterLink class="menu-link" to="/lieux" @click="closeMenu">LIEUX</RouterLink>
                     </li>
                     <li class="menu-item">
-                        <RouterLink class="menu-link" to="/lieux" @click="closeMenu">LIEUX</RouterLink>
+                            <RouterLink class="menu-link" to="/cartes" @click="closeMenu">NOS CARTES</RouterLink>
                     </li>
                     <li class="menu-item">
                         <RouterLink class="menu-link" to="/a_propos" @click="closeMenu">A PROPOS</RouterLink>
