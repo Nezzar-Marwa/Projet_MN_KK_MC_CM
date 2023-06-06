@@ -1,14 +1,10 @@
     <template>
-      
-    <div>
-       <h1>GOOGLE MAPS </h1>
-    </div>
       <GoogleMap
       api-key="AIzaSyDP-yUrQO6j5gcfYqpwPFZelGRWuhG104s"
-      style="width: 100%; height: 500px"
+      style="height: 600px"
       :center="center"
       :zoom="15"
-      >
+      class="mt-16 lg:mx-40">
       <Marker :options="{ position: center }" />
       <Marker :options="{ position: lieux1}"/>
       </GoogleMap>
