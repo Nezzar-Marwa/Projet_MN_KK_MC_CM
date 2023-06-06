@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import GoogleMaps from '@/components/GoogleMaps.vue';
+</script>
 <template>
     <h1>cartes</h1>
+    <GoogleMaps />
 </template>
