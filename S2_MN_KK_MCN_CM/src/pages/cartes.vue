@@ -23,7 +23,7 @@ import GoogleMaps from '@/components/GoogleMaps.vue';
          <RouterLink to="/lieux/vefum1zne0glll2">Le ballon d'Alsace</RouterLink>
      </li>
       <li class="ml-11 mb-2 underline h4">
-         <RouterLink to="/lieux/4o1ugjtk1f8jh56">Le saut de la bourique</RouterLink>
+         <RouterLink to="/lieux/4o1ugjtk1f8jh56">Le saut de la bourrique</RouterLink>
      </li>
       <li class="ml-11 mb-2 underline h4">
          <RouterLink to="/lieux/nnqzwdua12rp23h">La source Bleu</RouterLink>
