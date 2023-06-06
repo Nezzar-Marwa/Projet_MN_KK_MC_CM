@@ -37,6 +37,7 @@ export type ArticlesRecord = {
 	chapo?: string
 	image?: string
 	description?: string
+	favoris?: boolean
 }
 
 export type LieuxRecord = {
