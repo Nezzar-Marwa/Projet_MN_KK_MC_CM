@@ -14,10 +14,10 @@ const lieuxfav: LieuxResponse[] = await lieuxfavoris();
     <p class="h3 mb-11 lg:mb-28 mx-4"> Vous aimez les défis seul ou en équipe et surpassez vos limite ?</p>
 
   <div>
-  <h1 class="h2 font-bold text-center mb-8"> Foksers est LA solution qu'il vous faut ! </h1>
+  <h1 class="h1 font-bold text-center mb-11"> Fo<span class="text-toniccolor">X</span>treme est LA solution qu'il vous faut ! </h1>
   
   <div class="grille lg:mb-16">
-  <div class="col-span-5 col-start-2 bg-contrastcolor rounded-2xl text-backgroundcolor mb-8 lg:py-20 py-8 px-4 lg:px-14"><p>Fokser est un site permettant de regrouper des informations générales sur plusieurs climats et écosystème, il a un but informatif et applicatif permettant d’obtenir des informations, de partage et d’échanges autour d’activités en pleine nature tel que la randonnée, le camping, la pêche et autres.
+  <div class="col-span-5 col-start-2 bg-contrastcolor rounded-2xl text-backgroundcolor mb-8 lg:py-20 py-8 px-4 lg:px-14"><p>Foxtreme est un site permettant de regrouper des informations générales sur la survie ainsi que les chemins et lieux divers de France, il a un but informatif et applicatif permettant d’obtenir des informations, de partage et d’échanges autour d’activités en pleine nature en toute sécurité. Avec nous vous pourrez être au courant des dernières informations concernant la survie.
   </p></div>
     <img src="/img/hp_1.webp" alt="illustration 1" class="mb-5 m-auto w-[500px] col-span-5 col-start-7">
   </div>
@@ -25,7 +25,7 @@ const lieuxfav: LieuxResponse[] = await lieuxfavoris();
   <div class="grille lg:mb-16">
     <img src="/img/hp_2.webp" alt="illustration" class="mb-5 m-auto w-[500px] col-span-5 col-start-2">
     <div class="col-span-5 col-start-7 bg-contrastcolor rounded-2xl text-backgroundcolor mb-8 lg:py-28 py-8 px-14 lg:pl-20">
-<p>Foksers vous donne accès</p>
+<p>Foxtreme vous donne accès</p>
 <li>à des cartes intéractives</li>
 <li>une communauté de passionnés</li>
 <li>un espace d’échange</li>

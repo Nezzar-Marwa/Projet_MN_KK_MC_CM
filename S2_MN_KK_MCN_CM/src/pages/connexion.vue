@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1 class="h2 text-center font-medium">
+    <h1 class="h2 text-center font-medium mt-8 mx-6">
     Rejoignez notre communauté pour profiter de tout nos avantages 
   </h1>
 </div>
-  <div class="bg-contentbluecards rounded-tl-[51.94px] rounded-tr-[51.94px] lg:rounded-br-[51.94px] lg:rounded-bl-[51.94px] mt-20 lg:mb-20 flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+  <div class="lg:mx-96 border-4 border-contentbluecards mt-8 lg:mt-20 lg:mb-20 mb-10 flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
     <div class="w-full max-w-md space-y-8 ">
       <div v-if="currentUser">
         <h1>Welcome {{ currentUser?.name }}</h1>
@@ -35,7 +35,7 @@
         <div v-if="loginMode">
           <div class=" sm:col-span-2 sm:col-start-1 mt-4">
             <button type="button" @click="doLogin"
-              class="mr-3  bg-backgroundcolor px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-toniccolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">se connecter</button>
+              class="mr-3  bg-contentbluecards px-3 py-2 text-sm font-semibold text-text shadow-sm hover:bg-toniccolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text">se connecter</button>
 
             <button type="button" @click="loginMode = false"
               class=" bg-teamcolor px-3 py-2 text-sm font-semibold text-backgroundcolor opacity-90 shadow-sm hover:bg-contrastcolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Créer un compte</button>
@@ -53,10 +53,10 @@
           </div>
           <div class="sm:col-span-2 sm:col-start-1 mt-4">
             <button type="button" @click="doCreateAccount"
-              class="mr-3 rounded-md bg-backgroundcolor px-4 py-2 text-sm font-semibold text-text shadow-sm hover:bg-toniccolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-contentbluelayout">Valider</button>
+              class="mr-3 bg-contentbluecards  px-4 py-2 text-sm font-semibold text-text shadow-sm hover:bg-toniccolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-contentbluelayout">Valider</button>
 
             <button type="button" @click="loginMode = true"
-              class="rounded-md bg-teamcolor px-3 py-2 text-sm font-semibold text-backgroundcolor shadow-sm hover:bg-contrastcolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Annuler
+              class=" bg-teamcolor px-3 py-2 text-sm font-semibold text-backgroundcolor shadow-sm hover:bg-contrastcolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Annuler
             </button>
 
           </div>
