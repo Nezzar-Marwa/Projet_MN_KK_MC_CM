@@ -38,7 +38,7 @@
               class="mr-3  bg-contentbluecards px-3 py-2 text-sm font-semibold text-text shadow-sm hover:bg-toniccolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text">se connecter</button>
 
             <button type="button" @click="loginMode = false"
-              class=" bg-teamcolor px-3 py-2 text-sm font-semibold text-backgroundcolor opacity-90 shadow-sm hover:bg-contrastcolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Créer un compte</button>
+              class=" bg-teamcolor px-3 py-2 text-sm font-semibold text-backgroundcolor  shadow-sm hover:bg-contrastcolor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Créer un compte</button>
 
           </div>
         </div>
