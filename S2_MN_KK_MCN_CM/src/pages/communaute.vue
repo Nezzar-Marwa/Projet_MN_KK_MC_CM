@@ -60,9 +60,24 @@ import likerougeIcon from '@/components/icons/likerouge.vue'
    </section>
   </div>
 
+        <div class="flex justify-center items-center mb-7 ">
+              <button
+                  class=" rounded-lg border-2 border-text px-5 py-2 font-semibold text-text hover:bg-text hover:text-backgroundcolor">
+                  <RouterLink to="/connexion">Ajouter un commentaire</RouterLink>
+              </button>
+          </div>
+
+                <div class="flex justify-center items-center mb-7 ">
+              <button
+                  class=" rounded-lg border-2 border-text px-5 py-2 font-semibold text-text hover:bg-text hover:text-backgroundcolor">
+                  <RouterLink to="/connexion">Ajouter une question</RouterLink>
+              </button>
+          </div>
+
   <div>
-   <h1>A voir aussi</h1>
+   <h1 class="h3 font-medium text-center mb-5">A voir aussi</h1>
   </div>
+
 
    <div class="lg:grille pt-6 flex overflow-hidden overflow-x-scroll gap-5  ">
        <ArticleCard v-for=" unarticle of articlesfav" :v-key="articlesfavoris" v-bind="{ ...unarticle }"  class="flex-none lg:col-span-4 " />
