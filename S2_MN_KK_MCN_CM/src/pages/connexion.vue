@@ -1,6 +1,11 @@
 <template>
-  <div class="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
-    <div class="w-full max-w-md space-y-8">
+  <div>
+    <h1 class="h2 text-center font-medium">
+    Rejoignez notre communauté pour profiter de tout nos avantages 
+  </h1>
+</div>
+  <div class="bg-contentbluecards rounded-tl-[51.94px] rounded-tr-[51.94px] lg:rounded-br-[51.94px] lg:rounded-bl-[51.94px] mt-20 lg:mb-20 flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+    <div class="w-full max-w-md space-y-8 ">
       <div v-if="currentUser">
         <h1>Welcome {{ currentUser?.name }}</h1>
         <div>
